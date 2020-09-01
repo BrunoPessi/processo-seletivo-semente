@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel='stylesheet' href='style.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form id="form1">
+        <h1>Bússola da Startup - Semente Negócios</h1>
+
+        <div class="form-element">
+            <p>Olá empreendedora ou empreendedor!<br /> <br />
+
+                A seguir você realizará uma autoavaliação do seu negócio inovador. Este processo abrange os 5
+                primeiros
+                estágios do Caminho de um total de 6 e você responderá perguntas relacionadas a todos os estágios
+                que já
+                passou ou está passando. Esta análise de um negócio inovador é complexo, e isso é refletido nesse
+                formulário. Ele pode levar até 30 minutos para ser respondido, e a qualidade da devolutiva está
+                diretamente
+                relacionada à consistência das informações disponibilizadas. <br /> <br />
+
+                Ao enviar suas respostas você receberá, por email, uma devolutiva em PDF contendo:<br />
+                1. Um resumo dos principais dados do seu negócio;<br />
+                2. A autoavaliação da equipe de fundadores;<br />
+                3. Qual o estágio que o seu negócio se encontra, e o que isso significa;<br />
+                4. As principais atividades realizadas e marcos alcançados até aqui;<br />
+                5. Próximas atividades a serem priorizadas e o material de apoio para a realização delas;<br />
+                6. Projeção do estágio do seu negócio ao final da realização dessas atividades. <br /><br />
+
+                Este autodiagnóstico é, principalmente, um processo de autoconhecimento e autocrítica, portanto
+                encontre
+                um
+                local confortável para você e se prepare para sair da zona de conforto em relação ao seu negócio.
+                Vamos
+                começar!</p>
+        </div>
+
+        <div class="form-element">
+            <span>Email address</span>
+            <input id="emailField" type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-element">
+            <span>Qual o seu nome?</span>
+            <input id="nameField" type="name" name='nome' placeholder="Nome" required>
+        </div>
+
+        <div class="form-element">
+            <span>Qual o nome da sua startup?</span>
+            <input id="startupField" type="name" name='startup' placeholder="Nome da startup" required>
+        </div>
+
+        <div class="form-element">
+            <span>Defina sua startup em uma frase.</span>
+            <input id="fraseField" type="name" name='frase' placeholder="Frase" required>
+        </div>
+
+        <div class="form-element">
+            <span>Compromisso de não divulgação</span>
+        </div>
+
+        <div class="form-element checkbox">
+            <span>A Semente Negócios se compromete em não compartilhar com terceiros nenhuma informação extraída por
+                meio deste formulário.</span>
+            <label>
+                <input id="checkboxField" type="checkbox" name='termos' value="Estou ciente e concordo em continuar." required />
+                Estou ciente e concordo em continuar.
+            </label>
+        </div>
+
+        <button type="button" onclick="saveForm(form1) & changeForm(form1)">Proximo</button>
+    </form>
+
+
+    <form id="form2" name="form2" style="display: none;" action="">
+        <div class="form-element radio-buttons">
+            <span>A equipe de fundadores possui os perfis necessários para empreender um negócio inovador?</span>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radio" id="radio1" value="Não há comportamento recorrente que comprove que os fundadores tem algum dos perfis necessários para
+                o desenvolvimento de negócios inovadores.">
+                <label class="form-check-label" for="radio">
+                    Não há comportamento recorrente que comprove que os fundadores tem algum dos perfis necessários para
+                    o desenvolvimento de negócios inovadores.
+                </label>
+                <input class="form-check-input" type="radio" name="radio" id="radio2" value="Eventualmente os fundadores demonstram, com ações práticas, que possuem algum dos perfis necessários
+                para desenvolver um negócio inovador.">
+                <label class="form-check-label" for="radio">
+                    Eventualmente os fundadores demonstram, com ações práticas, que possuem algum dos perfis necessários
+                    para desenvolver um negócio inovador.
+                </label>
+                <input class="form-check-input" type="radio" name="radio" id="radio3" value="Os fundadores demonstram constantemente, com ações práticas, que possuem os perfis de Investigador,
+                Mobilizador e Fazedor.">
+                <label class="form-check-label" for="radio">
+                    Os fundadores demonstram constantemente, com ações práticas, que possuem os perfis de Investigador,
+                    Mobilizador e Fazedor.
+                </label>
+                <input class="form-check-input" type="radio" name="radio" id="radio4" value="Os fundadores demonstram constantemente, com ações práticas, que possuem todos os SEIS perfis
+                necessários para desenvolver um negócio inovador.">
+                <label class="form-check-label" for="radio">
+                    Os fundadores demonstram constantemente, com ações práticas, que possuem todos os SEIS perfis
+                    necessários para desenvolver um negócio inovador.
+                </label>
+            </div>
+        </div>
+        <button type="submit" id="botao2" onclick="saveForm() & changeForm() & enviarParaGoogle()">Proximo</button>
+    </form>
+
+</body>
+
+</html>

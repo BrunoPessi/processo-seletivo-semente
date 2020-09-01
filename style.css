@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    height: 100vh;
+    background: cadetblue;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 650px;
+    margin: 0 auto;
+}
+
+form {
+    background: #f8f4e5;
+    width: 800px;
+    padding: 60px;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-element span {
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    font: 25px;
+}
+
+h2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 5px solid black;
+    background: #f8f4e5;
+    outline: none;
+    color: black;
+    line-height: 2;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+
+input:focus {
+    border-bottom: 5px solid #ffa580;
+}
+  
+button {
+    display: block;
+    margin: 0 auto;
+    line-height: 28pt;
+    padding: 0 20px;
+    background: #ffa580;
+    letter-spacing: 2px;
+    transition: 0.2s all ease-in-out;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
+button:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+  
+::selection {
+    background: #ffc8ff;
+}
